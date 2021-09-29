@@ -6,13 +6,13 @@ import { Particles } from '../components/Paricles';
 const Home: NextPage = () => {
   return (
     <div className="p-0 m-0">
+      <Particles />
       <Head>
         <title>bo-yakitarako</title>
         <meta name="description" content="bo-yakitarakoのホームページ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main id="main" className="relative w-full h-screen bg-gray-900">
-        <Particles />
+      <div className="h-screen">
         <FadeIn>
           <header className="flex absolute flex-col justify-center items-center w-full h-full">
             <h1 className="text-4xl sm:text-6xl">bo-yakitarako</h1>
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             </p>
           </header>
         </FadeIn>
-      </main>
+      </div>
     </div>
   );
 };
