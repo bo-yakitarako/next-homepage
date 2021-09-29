@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { FadeIn } from '../components/FadeIn';
 import { Particles } from '../components/Paricles';
 
 const Home: NextPage = () => {
@@ -12,9 +13,11 @@ const Home: NextPage = () => {
       </Head>
       <main id="main" className="relative w-full h-screen bg-gray-900">
         <Particles />
-        <header className="flex absolute justify-center items-center w-full h-full">
-          <h1 className="text-5xl text-gray-50">bo-yakitarako</h1>
-        </header>
+        <FadeIn>
+          <header className="flex absolute justify-center items-center w-full h-full">
+            <h1 className="text-5xl text-gray-50">bo-yakitarako</h1>
+          </header>
+        </FadeIn>
       </main>
     </div>
   );
