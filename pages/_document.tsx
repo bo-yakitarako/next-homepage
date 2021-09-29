@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="font-mincho">
+        <body className="font-mincho text-gray-50">
           <Main />
           <NextScript />
         </body>
