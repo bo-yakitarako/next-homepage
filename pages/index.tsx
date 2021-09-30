@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { FadeIn } from '../components/FadeIn';
 import { Particles } from '../components/Paricles';
+import { SideMenu } from '../components/sideMenu/SideMenu';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="h-screen">
+        <SideMenu />
         <FadeIn>
           <header className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-4xl sm:text-6xl">bo-yakitarako</h1>
