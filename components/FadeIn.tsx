@@ -14,7 +14,7 @@ const FadeIn: React.FC = ({ children }) => {
       <div
         className={`w-full h-full ${
           show
-            ? 'opacity-100 transition duration-700'
+            ? 'opacity-100 transition duration-1000'
             : 'opacity-0 translate-y-6'
         }`}
       >
