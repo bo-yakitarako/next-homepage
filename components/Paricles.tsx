@@ -5,7 +5,7 @@ import ParticlesParams from '../particles.json';
 const Particles: React.FC = () => {
   return (
     <ParticlesJS
-      className="absolute w-full h-full"
+      className="absolute z-0 w-full h-full"
       params={ParticlesParams as RecursivePartial<IOptions>}
     />
   );
