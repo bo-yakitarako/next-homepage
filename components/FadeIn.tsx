@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type Props = {
-  overflowY?: 'hidden' | 'scroll' | 'auto';
-};
-
-const FadeIn: React.FC<Props> = ({ children, overflowY = 'hidden' }) => {
+const FadeIn: React.FC = ({ children }) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -14,7 +10,7 @@ const FadeIn: React.FC<Props> = ({ children, overflowY = 'hidden' }) => {
   }, []);
 
   return (
-    <div className={`overflow-y-${overflowY} w-full h-full scrollbar-hide`}>
+    <div className="overflow-hidden w-full h-full">
       <div
         className={`w-full h-full ${
           show
