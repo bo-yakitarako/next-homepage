@@ -4,7 +4,7 @@
       "value": 30,
       "density": {
         "enable": true,
-        "value_area": 473.4885849793636
+        "value_area": 480
       }
     },
     "color": {
@@ -75,7 +75,7 @@
         "mode": "bubble"
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "push"
       },
       "resize": true
@@ -88,10 +88,10 @@
         }
       },
       "bubble": {
-        "distance": 182.71737276780266,
+        "distance": 300,
         "size": 8,
         "duration": 2,
-        "opacity": 0.665903314087103,
+        "opacity": 0.8,
         "speed": 3
       },
       "repulse": {
