@@ -8,7 +8,7 @@ function App({ Component, pageProps }: AppProps) {
     <div className="relative w-full h-screen font-mincho text-gray-50 bg-gray-900">
       <Particles />
       <SideMenu />
-      <main className="h-screen">
+      <main className="overflow-y-scroll fixed z-10 w-full h-screen scrollbar-hide">
         <Component {...pageProps} />
       </main>
     </div>
