@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 // eslint-disable-next-line import/no-default-export
-export default class MyDocument extends Document {
+export default class AppDocument extends Document {
   render() {
     return (
       <Html>
@@ -16,14 +16,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
-          <main
-            id="main"
-            className="relative w-full h-screen font-mincho text-gray-50 bg-gray-900"
-          >
-            <Main />
-          </main>
+          <Main />
           <NextScript />
         </body>
       </Html>
