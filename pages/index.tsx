@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>bo-yakitarako</title>
-        <meta name="description" content="bo-yakitarakoのホームページ" />
+        <meta name="description" content="ゴルフ好きのWebエンジニアです" />
       </Head>
       <FadeIn>
         <header className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
