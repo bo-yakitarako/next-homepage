@@ -22,8 +22,8 @@ const SideMenuItem: React.FC<Props> = ({ href, children, contents = [] }) => {
 
   if (typeof href !== 'undefined') {
     return (
-      <li className="px-4 pt-8">
-        <Link href={href} className="text-2xl">
+      <li className="px-4 pt-6 sm:pt-8">
+        <Link href={href} className="text-xl sm:text-2xl">
           {children}
         </Link>
       </li>
@@ -32,8 +32,8 @@ const SideMenuItem: React.FC<Props> = ({ href, children, contents = [] }) => {
 
   return (
     <>
-      <li className="flex items-center px-4 pt-8">
-        <Link className="text-2xl">
+      <li className="flex items-center px-4 pt-6 sm:pt-8">
+        <Link className="text-xl sm:text-2xl">
           <span className="w-full h-full" onClick={handleExpansion}>
             {children}
             <FontAwesomeIcon
@@ -54,7 +54,7 @@ const SideMenuItem: React.FC<Props> = ({ href, children, contents = [] }) => {
           } transition-all duration-700`}
         >
           {contents.map(({ title, path }) => (
-            <li className="py-0.5" key={path}>
+            <li className="py-1" key={path}>
               <Link className="text-base" href={path}>
                 {title}
               </Link>
