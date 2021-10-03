@@ -49,7 +49,9 @@ const SideMenuItem: React.FC<Props> = ({ href, children, contents = [] }) => {
         <ul
           className={`${
             isExpand
-              ? `mt-3 visible h-${9 * contents.length}`
+              ? `mt-3 visible h-${10 * contents.length} sm:h-${
+                  9 * contents.length
+                }`
               : 'h-0 mt-0 invisible opacity-0'
           } transition-all duration-700`}
         >
