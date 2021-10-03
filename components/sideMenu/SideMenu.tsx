@@ -15,8 +15,8 @@ const products: Page[] = [
 
 const SideMenu: React.FC = () => {
   return (
-    <nav className="hidden sm:block fixed top-3 left-3 w-60 bg-transparent">
-      <ul className="flex overflow-y-scroll relative flex-col w-full max-h-screen list-none">
+    <nav className="hidden sm:block fixed p-3 w-[fit-content] h-screen bg-transparent">
+      <ul className="flex overflow-y-auto relative flex-col h-full max-h-full list-none">
         <SideMenuItem href="/about">About</SideMenuItem>
         <SideMenuItem href="/golf">Golf</SideMenuItem>
         <SideMenuItem contents={sparebeatProducts}>Sparebeat</SideMenuItem>
