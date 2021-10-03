@@ -9,8 +9,8 @@ const Home: NextPage = () => {
         <title>bo-yakitarako</title>
         <meta name="description" content="bo-yakitarakoのホームページ" />
       </Head>
-      <FadeIn fixed>
-        <header className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <FadeIn>
+        <header className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <h1 className="text-4xl sm:text-6xl whitespace-nowrap -translate-y-1">
             bo-yakitarako
           </h1>

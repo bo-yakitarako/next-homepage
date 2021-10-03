@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react';
 
-type Props = {
-  fixed?: boolean;
-};
-
-const FadeIn: React.FC<Props> = ({ children, fixed }) => {
+const FadeIn: React.FC = ({ children }) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -16,7 +12,7 @@ const FadeIn: React.FC<Props> = ({ children, fixed }) => {
   return (
     <div className="overflow-hidden w-full h-full">
       <div
-        className={`w-full h-full ${fixed ? 'fixed' : ''} ${
+        className={`w-full h-full ${
           show
             ? 'opacity-100 transition duration-1000'
             : 'opacity-0 translate-y-6'
