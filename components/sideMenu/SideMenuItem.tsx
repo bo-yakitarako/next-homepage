@@ -33,24 +33,28 @@ const SideMenuItem: React.FC<Props> = ({ href, children, contents = [] }) => {
   return (
     <>
       <li className="flex items-center px-4 pt-8">
-        <span
-          className="text-2xl hover:cursor-pointer"
-          onClick={handleExpansion}
-        >
-          {children}
-          <FontAwesomeIcon className="ml-2 fill-current" icon={faCaretDown} />
-        </span>
+        <Link className="text-2xl">
+          <span className="w-full h-full" onClick={handleExpansion}>
+            {children}
+            <FontAwesomeIcon
+              className={`ml-2 fill-current transition-transform duration-700 ${
+                isExpand ? 'rotate-180' : ''
+              }`}
+              icon={faCaretDown}
+            />
+          </span>
+        </Link>
       </li>
-      <li
-        className={`${
-          isExpand
-            ? `mt-1 h-${10 * contents.length} opacity-100 visible`
-            : 'mt-0 h-0 opacity-0'
-        } transition-all duration-700`}
-      >
-        <ul className="pl-7">
+      <li className="pl-7">
+        <ul
+          className={`${
+            isExpand
+              ? `mt-3 visible h-${9 * contents.length}`
+              : 'h-0 mt-0 invisible opacity-0'
+          } transition-all duration-700`}
+        >
           {contents.map(({ title, path }) => (
-            <li className="mt-2" key={path}>
+            <li className="py-0.5" key={path}>
               <Link className="text-base" href={path}>
                 {title}
               </Link>

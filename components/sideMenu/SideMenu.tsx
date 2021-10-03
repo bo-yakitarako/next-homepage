@@ -15,7 +15,7 @@ const products: Page[] = [
 
 const SideMenu: React.FC = () => {
   return (
-    <nav className="hidden sm:block fixed p-3 w-[fit-content] h-1/2 bg-transparent">
+    <nav className="hidden sm:block fixed p-3 w-[fit-content] h-screen bg-transparent">
       {/* eslint-disable-next-line tailwindcss/no-custom-classname */}
       <ul className="flex overflow-y-auto relative flex-col h-full max-h-full list-none scrollbar-hide">
         <SideMenuItem href="/about">About</SideMenuItem>
