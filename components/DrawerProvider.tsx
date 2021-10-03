@@ -8,7 +8,11 @@ const DrawerProvider: React.FC = ({ children }) => {
     setOpen((prev) => !prev);
   }, []);
 
-  const value = { open, toggleOpen };
+  const closeDrawer = useCallback(() => {
+    setOpen(false);
+  }, []);
+
+  const value = { open, toggleOpen, closeDrawer };
   return (
     <DrawerContext.Provider value={value}>{children}</DrawerContext.Provider>
   );

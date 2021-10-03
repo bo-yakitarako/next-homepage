@@ -2,9 +2,8 @@ import { createContext, useContext } from 'react';
 
 const initialContext = {
   open: false,
-  toggleOpen: () => {
-    /* todo nothing */
-  },
+  toggleOpen: () => {}, // eslint-disable-line @typescript-eslint/no-empty-function
+  closeDrawer: () => {}, // eslint-disable-line @typescript-eslint/no-empty-function
 };
 export const DrawerContext = createContext(initialContext);
 
