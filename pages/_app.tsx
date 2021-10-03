@@ -3,12 +3,14 @@ import type { AppProps } from 'next/app';
 import { DrawerProvider } from '../components/DrawerProvider';
 import { Particles } from '../components/Paricles';
 import { SideMenu } from '../components/sideMenu/SideMenu';
+import { SPDrawer } from '../components/sideMenu/drawer/SPDrawer';
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <DrawerProvider>
       <div className="relative w-full h-screen font-mincho text-gray-50 bg-gray-900">
         <Particles />
+        <SPDrawer />
         <nav className="hidden sm:block fixed p-3 w-[fit-content] h-screen">
           <SideMenu />
         </nav>
